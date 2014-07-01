@@ -30,6 +30,28 @@ static User *currentUser = nil;
     return self;
 }
 
+- (NSString *)convertToString:(NSInteger)number {
+    if (number > 1000000) {
+        return [NSString stringWithFormat:@"%.1fM", number/1000000.0];
+    } else if (number > 1000) {
+        return [NSString stringWithFormat:@"%.1fK", number/1000.0];
+    }
+    
+    return [NSString stringWithFormat:@"%d", number];
+}
+
+- (NSString *)followerCountDisplay {
+    return [self convertToString:self.followerCount];
+}
+
+- (NSString *)friendCountDisplay {
+    return [self convertToString:self.friendCount];
+}
+
+- (NSString *)statusCountDisplay {
+    return [self convertToString:self.statusCount];
+}
+
 + (id)currentUser {
     if (currentUser == nil) {
         NSDictionary *dictionary = [[NSUserDefaults standardUserDefaults] objectForKey:@"current_user"];

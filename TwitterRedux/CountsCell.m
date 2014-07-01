@@ -31,9 +31,9 @@
 }
 
 - (void)reloadCellWithUser:(User *)user {
-    self.tweetsLabel.text = [NSString stringWithFormat:@"%ld", (long)user.statusCount];
-    self.followingLabel.text = [NSString stringWithFormat:@"%ld", (long)user.friendCount];
-    self.followersLabel.text = [NSString stringWithFormat:@"%ld", (long)user.followerCount];
+    self.tweetsLabel.text = [user statusCountDisplay];
+    self.followingLabel.text = [user friendCountDisplay];
+    self.followersLabel.text = [user followerCountDisplay];
 }
 
 @end

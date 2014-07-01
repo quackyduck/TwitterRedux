@@ -23,5 +23,8 @@
 + (id)currentUser;
 + (void)setCurrentUser:(NSDictionary *)user;
 - (id)initWithDictionary:(NSDictionary *)rawData;
+- (NSString *)followerCountDisplay;
+- (NSString *)friendCountDisplay;
+- (NSString *)statusCountDisplay;
 
 @end
