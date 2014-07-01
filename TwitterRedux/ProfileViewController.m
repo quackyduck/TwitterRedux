@@ -7,14 +7,15 @@
 //
 
 #import "ProfileViewController.h"
-#import "ProfileHeaderCell.h"
+//#import "ProfileHeaderCell.h"
 #import "CountsCell.h"
 #import "User.h"
 #import "TwitterClient.h"
+#import "ProfileHeaderView.h"
 
 @interface ProfileViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) ProfileHeaderCell *profileCell;
+//@property (strong, nonatomic) ProfileHeaderCell *profileCell;
 @property (strong, nonatomic) CountsCell *countsCell;
 @property (strong, nonatomic) User *user;
 @property NSInteger userId;
@@ -47,16 +48,21 @@
     [[TwitterClient sharedInstance] lookupUserWithId:self.userId success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Got user info %@", responseObject);
         self.user = [[User alloc] initWithDictionary:(NSDictionary *)responseObject];
+        
+        
+        UINib *profileHeaderNib = [UINib nibWithNibName:@"ProfileHeaderView" bundle:nil];
+        [self.tableView registerNib:profileHeaderNib forHeaderFooterViewReuseIdentifier:@"profileHeader"];
+        NSArray *profileNibs = [profileHeaderNib instantiateWithOwner:nil options:nil];
+        
+        ProfileHeaderView *profileHeaderView = (ProfileHeaderView *)profileNibs[0];
+        [profileHeaderView reloadViewWithUser:self.user];
+        
+        self.tableView.tableHeaderView = profileHeaderView;
         [self.tableView reloadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Failed to get user data.");
     }];
-    
-    UINib *retweetCellNib = [UINib nibWithNibName:@"ProfileHeaderCell" bundle:nil];
-    [self.tableView registerNib:retweetCellNib forCellReuseIdentifier:@"profileCell"];
-    NSArray *retweetNibs = [retweetCellNib instantiateWithOwner:nil options:nil];
-    self.profileCell = retweetNibs[0];
     
     UINib *countsCell = [UINib nibWithNibName:@"CountsCell" bundle:nil];
     [self.tableView registerNib:countsCell forCellReuseIdentifier:@"countsCell"];
@@ -70,20 +76,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     CGFloat height;
-    if (indexPath.row == 0) {
-        [self.profileCell layoutSubviews];
-        height = [self.profileCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    } else {
-        [self.countsCell layoutSubviews];
-        height = [self.countsCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    }
+    [self.countsCell layoutSubviews];
+    height = [self.countsCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     
     NSLog(@"height is %f", height);
     
@@ -93,13 +96,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.row == 0) {
-        [self.profileCell reloadCellWithUser:self.user];
-        return self.profileCell;
-    } else {
-        [self.countsCell reloadCellWithUser:self.user];
-        return self.countsCell;
-    }
+    [self.countsCell reloadCellWithUser:self.user];
+    return self.countsCell;
 }
 
 @end

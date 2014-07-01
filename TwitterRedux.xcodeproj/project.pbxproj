@@ -48,12 +48,12 @@
 		0A8A4633195FD96D00939885 /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8A462E195FD96D00939885 /* favorite.png */; };
 		0A8A4637196073CD00939885 /* MenuHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A4635196073CD00939885 /* MenuHeaderTableViewCell.m */; };
 		0A8A4638196073CD00939885 /* MenuHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8A4636196073CD00939885 /* MenuHeaderTableViewCell.xib */; };
-		0A8A463C1960B0F100939885 /* ProfileHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A463A1960B0F100939885 /* ProfileHeaderCell.m */; };
-		0A8A463D1960B0F100939885 /* ProfileHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8A463B1960B0F100939885 /* ProfileHeaderCell.xib */; };
 		0A8A46411960B6BF00939885 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A463F1960B6BF00939885 /* ProfileViewController.m */; };
 		0A8A46421960B6BF00939885 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8A46401960B6BF00939885 /* ProfileViewController.xib */; };
 		0A8A46461960F13100939885 /* CountsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A46441960F13100939885 /* CountsCell.m */; };
 		0A8A46471960F13100939885 /* CountsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8A46451960F13100939885 /* CountsCell.xib */; };
+		0AC3D2D619637019009B9E23 /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3D2D519637019009B9E23 /* ProfileHeaderView.xib */; };
+		0AC3D2D919637040009B9E23 /* ProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3D2D819637040009B9E23 /* ProfileHeaderView.m */; };
 		64A091E1E4AC48EDB81A4A00 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C918DA9B044146D99023F91A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -127,15 +127,15 @@
 		0A8A4634196073CD00939885 /* MenuHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuHeaderTableViewCell.h; sourceTree = "<group>"; };
 		0A8A4635196073CD00939885 /* MenuHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuHeaderTableViewCell.m; sourceTree = "<group>"; };
 		0A8A4636196073CD00939885 /* MenuHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuHeaderTableViewCell.xib; sourceTree = "<group>"; };
-		0A8A46391960B0F100939885 /* ProfileHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderCell.h; sourceTree = "<group>"; };
-		0A8A463A1960B0F100939885 /* ProfileHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderCell.m; sourceTree = "<group>"; };
-		0A8A463B1960B0F100939885 /* ProfileHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileHeaderCell.xib; sourceTree = "<group>"; };
 		0A8A463E1960B6BF00939885 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		0A8A463F1960B6BF00939885 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		0A8A46401960B6BF00939885 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		0A8A46431960F13100939885 /* CountsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountsCell.h; sourceTree = "<group>"; };
 		0A8A46441960F13100939885 /* CountsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountsCell.m; sourceTree = "<group>"; };
 		0A8A46451960F13100939885 /* CountsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountsCell.xib; sourceTree = "<group>"; };
+		0AC3D2D519637019009B9E23 /* ProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
+		0AC3D2D719637040009B9E23 /* ProfileHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderView.h; sourceTree = "<group>"; };
+		0AC3D2D819637040009B9E23 /* ProfileHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderView.m; sourceTree = "<group>"; };
 		C918DA9B044146D99023F91A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17B1D34DE8241F89A2BF767 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,12 +303,12 @@
 				0A8A4634196073CD00939885 /* MenuHeaderTableViewCell.h */,
 				0A8A4635196073CD00939885 /* MenuHeaderTableViewCell.m */,
 				0A8A4636196073CD00939885 /* MenuHeaderTableViewCell.xib */,
-				0A8A46391960B0F100939885 /* ProfileHeaderCell.h */,
-				0A8A463A1960B0F100939885 /* ProfileHeaderCell.m */,
-				0A8A463B1960B0F100939885 /* ProfileHeaderCell.xib */,
 				0A8A46431960F13100939885 /* CountsCell.h */,
 				0A8A46441960F13100939885 /* CountsCell.m */,
 				0A8A46451960F13100939885 /* CountsCell.xib */,
+				0AC3D2D519637019009B9E23 /* ProfileHeaderView.xib */,
+				0AC3D2D719637040009B9E23 /* ProfileHeaderView.h */,
+				0AC3D2D819637040009B9E23 /* ProfileHeaderView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -401,9 +401,9 @@
 				0A8A4630195FD96D00939885 /* favorite_on.png in Resources */,
 				0A8A4631195FD96D00939885 /* retweet.png in Resources */,
 				0A8A45BF195E0C9700939885 /* InfoPlist.strings in Resources */,
+				0AC3D2D619637019009B9E23 /* ProfileHeaderView.xib in Resources */,
 				0A8A4617195FD18C00939885 /* ComposeViewController.xib in Resources */,
 				0A8A462F195FD96D00939885 /* retweet_on.png in Resources */,
-				0A8A463D1960B0F100939885 /* ProfileHeaderCell.xib in Resources */,
 				0A8A4629195FD1A100939885 /* DetailTweetCell.xib in Resources */,
 				0A8A45F2195E0E4200939885 /* MenuViewController.xib in Resources */,
 				0A8A4638196073CD00939885 /* MenuHeaderTableViewCell.xib in Resources */,
@@ -471,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A8A4605195FD17E00939885 /* User.m in Sources */,
+				0AC3D2D919637040009B9E23 /* ProfileHeaderView.m in Sources */,
 				0A8A45C5195E0C9700939885 /* AppDelegate.m in Sources */,
 				0A8A4637196073CD00939885 /* MenuHeaderTableViewCell.m in Sources */,
 				0A8A4628195FD1A100939885 /* DetailTweetCell.m in Sources */,
@@ -478,7 +479,6 @@
 				0A8A4604195FD17E00939885 /* Tweet.m in Sources */,
 				0A8A4612195FD18C00939885 /* LoginViewController.m in Sources */,
 				0A8A4614195FD18C00939885 /* TweetsViewController.m in Sources */,
-				0A8A463C1960B0F100939885 /* ProfileHeaderCell.m in Sources */,
 				0A8A46411960B6BF00939885 /* ProfileViewController.m in Sources */,
 				0A8A45C1195E0C9700939885 /* main.m in Sources */,
 				0A8A4626195FD1A100939885 /* TweetMainCell.m in Sources */,
