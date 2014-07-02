@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A7321AF1963C7B900048156 /* MainUserProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7321AE1963C7B900048156 /* MainUserProfileView.m */; };
+		0A7321B21963C7CD00048156 /* TaglineUserProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7321B11963C7CD00048156 /* TaglineUserProfileView.m */; };
+		0A7321B41963C7E400048156 /* MainUserProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7321B31963C7E400048156 /* MainUserProfileView.xib */; };
+		0A7321B61963C7FA00048156 /* TaglineUserProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7321B51963C7FA00048156 /* TaglineUserProfileView.xib */; };
 		0A8A45B5195E0C9700939885 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8A45B4195E0C9700939885 /* Foundation.framework */; };
 		0A8A45B7195E0C9700939885 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8A45B6195E0C9700939885 /* CoreGraphics.framework */; };
 		0A8A45B9195E0C9700939885 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8A45B8195E0C9700939885 /* UIKit.framework */; };
@@ -68,6 +72,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A7321AD1963C7B900048156 /* MainUserProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUserProfileView.h; sourceTree = "<group>"; };
+		0A7321AE1963C7B900048156 /* MainUserProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUserProfileView.m; sourceTree = "<group>"; };
+		0A7321B01963C7CD00048156 /* TaglineUserProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaglineUserProfileView.h; sourceTree = "<group>"; };
+		0A7321B11963C7CD00048156 /* TaglineUserProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaglineUserProfileView.m; sourceTree = "<group>"; };
+		0A7321B31963C7E400048156 /* MainUserProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainUserProfileView.xib; sourceTree = "<group>"; };
+		0A7321B51963C7FA00048156 /* TaglineUserProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaglineUserProfileView.xib; sourceTree = "<group>"; };
 		0A8A45B1195E0C9700939885 /* TwitterRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8A45B4195E0C9700939885 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A8A45B6195E0C9700939885 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -309,6 +319,12 @@
 				0AC3D2D519637019009B9E23 /* ProfileHeaderView.xib */,
 				0AC3D2D719637040009B9E23 /* ProfileHeaderView.h */,
 				0AC3D2D819637040009B9E23 /* ProfileHeaderView.m */,
+				0A7321AD1963C7B900048156 /* MainUserProfileView.h */,
+				0A7321AE1963C7B900048156 /* MainUserProfileView.m */,
+				0A7321B31963C7E400048156 /* MainUserProfileView.xib */,
+				0A7321B01963C7CD00048156 /* TaglineUserProfileView.h */,
+				0A7321B11963C7CD00048156 /* TaglineUserProfileView.m */,
+				0A7321B51963C7FA00048156 /* TaglineUserProfileView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -405,6 +421,7 @@
 				0A8A4617195FD18C00939885 /* ComposeViewController.xib in Resources */,
 				0A8A462F195FD96D00939885 /* retweet_on.png in Resources */,
 				0A8A4629195FD1A100939885 /* DetailTweetCell.xib in Resources */,
+				0A7321B61963C7FA00048156 /* TaglineUserProfileView.xib in Resources */,
 				0A8A45F2195E0E4200939885 /* MenuViewController.xib in Resources */,
 				0A8A4638196073CD00939885 /* MenuHeaderTableViewCell.xib in Resources */,
 				0A8A45F4195E0E7E00939885 /* hamburger.png in Resources */,
@@ -418,6 +435,7 @@
 				0A8A4619195FD18C00939885 /* DetailViewController.xib in Resources */,
 				0A8A4613195FD18C00939885 /* LoginViewController.xib in Resources */,
 				0A8A46421960B6BF00939885 /* ProfileViewController.xib in Resources */,
+				0A7321B41963C7E400048156 /* MainUserProfileView.xib in Resources */,
 				0A8A45C7195E0C9700939885 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A8A4605195FD17E00939885 /* User.m in Sources */,
+				0A7321AF1963C7B900048156 /* MainUserProfileView.m in Sources */,
 				0AC3D2D919637040009B9E23 /* ProfileHeaderView.m in Sources */,
 				0A8A45C5195E0C9700939885 /* AppDelegate.m in Sources */,
 				0A8A4637196073CD00939885 /* MenuHeaderTableViewCell.m in Sources */,
@@ -487,6 +506,7 @@
 				0A8A4624195FD1A100939885 /* RetweetCell.m in Sources */,
 				0A8A46461960F13100939885 /* CountsCell.m in Sources */,
 				0A8A45F1195E0E4200939885 /* MenuViewController.m in Sources */,
+				0A7321B21963C7CD00048156 /* TaglineUserProfileView.m in Sources */,
 				0A8A4618195FD18C00939885 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

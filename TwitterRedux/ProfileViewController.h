@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ProfileViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
 - (id)initWithUserId:(NSInteger)userId;
 @end

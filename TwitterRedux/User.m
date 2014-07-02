@@ -22,6 +22,12 @@ static User *currentUser = nil;
     self.statusCount = [rawData[@"statuses_count"] integerValue];
     self.userId = [rawData[@"id"] integerValue];
     
+    if ([rawData[@"description"] isEqualToString:@""]) {
+        self.description = rawData[@"location"];
+    } else {
+        self.description = rawData[@"description"];
+    }
+    
     NSString *profileURL = rawData[@"profile_image_url"];
     self.profileImageURL = [profileURL stringByReplacingOccurrencesOfString:@"_normal" withString:@"_bigger"];
     
@@ -73,6 +79,12 @@ static User *currentUser = nil;
     NSInteger friendCount = [user[@"friends_count"] integerValue];
     NSInteger statusCount = [user[@"statuses_count"] integerValue];
     
+    NSString *description;
+    if ([user[@"description"] isEqualToString:@""]) {
+        description = user[@"location"];
+    } else {
+        description = user[@"description"];
+    }
     
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -84,9 +96,10 @@ static User *currentUser = nil;
     [userDefaults setInteger:friendCount forKey:@"friends_count"];
     [userDefaults setInteger:followerCount forKey:@"followers_count"];
     [userDefaults setInteger:statusCount forKey:@"statuses_count"];
+    [userDefaults setObject:description forKey:@"description"];
     [userDefaults synchronize];
 
-    currentUser = [[self alloc] initWithDictionary:@{@"profile_banner_url": user[@"profile_banner_url"], @"profile_image_url": profileURL, @"screen_name": screenName, @"name": name, @"friends_count": @(friendCount), @"followers_count": @(followerCount), @"statuses_count": @(statusCount), @"id": @(userId)}];
+    currentUser = [[self alloc] initWithDictionary:@{@"profile_banner_url": user[@"profile_banner_url"], @"profile_image_url": profileURL, @"screen_name": screenName, @"name": name, @"friends_count": @(friendCount), @"followers_count": @(followerCount), @"statuses_count": @(statusCount), @"id": @(userId), @"description": description}];
     
 }
 

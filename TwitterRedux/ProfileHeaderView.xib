@@ -14,68 +14,36 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2L-lf-Qvm">
-                    <rect key="frame" x="123" y="20" width="75" height="75"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maj-7M-UGD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="147"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" defersCurrentPageDisplay="YES" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="iha-CL-dZZ">
+                    <rect key="frame" x="141" y="146" width="39" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NhD-Us-jzt">
-                            <rect key="frame" x="7" y="8" width="60" height="60"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="60" id="1PC-Us-Cgt"/>
-                                <constraint firstAttribute="width" constant="60" id="Rey-YR-XTu"/>
-                            </constraints>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="NhD-Us-jzt" firstAttribute="leading" secondItem="z2L-lf-Qvm" secondAttribute="leading" constant="7" id="0ld-ew-5oO"/>
-                        <constraint firstAttribute="height" constant="75" id="4Gx-g6-QN2"/>
-                        <constraint firstAttribute="trailing" secondItem="NhD-Us-jzt" secondAttribute="trailing" constant="8" id="Ccb-or-hyY"/>
-                        <constraint firstAttribute="bottom" secondItem="NhD-Us-jzt" secondAttribute="bottom" constant="7" id="Nwi-5k-9pt"/>
-                        <constraint firstItem="NhD-Us-jzt" firstAttribute="top" secondItem="z2L-lf-Qvm" secondAttribute="top" constant="8" id="vPY-b8-rnf"/>
-                        <constraint firstAttribute="width" constant="75" id="zz5-9k-xSh"/>
-                    </constraints>
-                </view>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Nicolas Melo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWn-9I-MCS">
-                    <rect key="frame" x="116" y="103" width="89" height="18"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@quackyduck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehs-1h-emA">
-                    <rect key="frame" x="121" y="122" width="78" height="27"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                </pageControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Ehs-1h-emA" secondAttribute="bottom" constant="34" id="Amb-v0-aJr"/>
+                <constraint firstItem="Maj-7M-UGD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CTl-oX-TvB"/>
                 <constraint firstItem="5D3-Xx-zFh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EDL-qh-RBY"/>
-                <constraint firstAttribute="centerX" secondItem="Ehs-1h-emA" secondAttribute="centerX" id="LIy-MW-vEE"/>
-                <constraint firstAttribute="centerX" secondItem="z2L-lf-Qvm" secondAttribute="centerX" id="PUf-nH-ZpU"/>
                 <constraint firstItem="5D3-Xx-zFh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WX7-QQ-2No"/>
-                <constraint firstItem="qWn-9I-MCS" firstAttribute="top" secondItem="z2L-lf-Qvm" secondAttribute="bottom" constant="8" id="WbH-Du-T3W"/>
-                <constraint firstItem="Ehs-1h-emA" firstAttribute="top" secondItem="qWn-9I-MCS" secondAttribute="bottom" constant="1" id="iF8-mN-SUZ"/>
-                <constraint firstAttribute="centerX" secondItem="z2L-lf-Qvm" secondAttribute="centerX" id="tai-T0-tj8"/>
+                <constraint firstItem="Maj-7M-UGD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="p99-hM-IUH"/>
+                <constraint firstAttribute="bottom" secondItem="Maj-7M-UGD" secondAttribute="bottom" constant="36" id="roR-eH-Llk"/>
                 <constraint firstAttribute="trailing" secondItem="5D3-Xx-zFh" secondAttribute="trailing" id="tvE-SZ-k5V"/>
-                <constraint firstItem="z2L-lf-Qvm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="wKz-9G-uc1"/>
-                <constraint firstAttribute="centerX" secondItem="qWn-9I-MCS" secondAttribute="centerX" id="wMZ-Kr-hRg"/>
                 <constraint firstAttribute="bottom" secondItem="5D3-Xx-zFh" secondAttribute="bottom" id="xX1-Lv-Ye5"/>
+                <constraint firstAttribute="trailing" secondItem="Maj-7M-UGD" secondAttribute="trailing" id="yjx-PD-6Kw"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="5D3-Xx-zFh" id="8XO-g9-GJs"/>
-                <outlet property="nameLabel" destination="qWn-9I-MCS" id="36c-zx-mLD"/>
-                <outlet property="placeholderView" destination="z2L-lf-Qvm" id="Fbk-uL-fWQ"/>
-                <outlet property="profileImageView" destination="NhD-Us-jzt" id="ene-3K-Ugj"/>
-                <outlet property="screenNameLabel" destination="Ehs-1h-emA" id="wNM-6x-vhz"/>
+                <outlet property="pageControl" destination="SRG-YZ-9Fp" id="2Jn-bo-pzW"/>
+                <outlet property="scrollView" destination="Maj-7M-UGD" id="Q0n-iB-qMZ"/>
             </connections>
         </view>
+        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" id="SRG-YZ-9Fp">
+            <rect key="frame" x="0.0" y="0.0" width="39" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </pageControl>
     </objects>
 </document>

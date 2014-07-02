@@ -18,6 +18,7 @@
 @property NSInteger followerCount;
 @property NSInteger friendCount;
 @property NSInteger statusCount;
+@property (strong, nonatomic) NSString *description;
 
 
 + (id)currentUser;
